@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="body" align="center">
+    <h1>Hex Color Codes</h1><br><br><hr><br><br><br>
+    <table align="center" border="1">
+        <tbody>
+            <tr>
+                <th id="c11" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#FFFFFF</th>
+                <th id="c12" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#C0C0C0</th>
+                <th id="c13" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#000000</th>
+            </tr>
+            <tr>
+                <th id="c21" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#FF0000</th>
+                <th id="c22" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#800000</th>
+                <th id="c23" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#FFFF00</th>
+            </tr>
+            <tr>
+                <th id="c31" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#808000</th>
+                <th id="c32" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#00FF00</th>
+                <th id="c33" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#008000</th>
+            </tr>
+            <tr>
+                <th id="c41" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#00FFFF</th>
+                <th id="c42" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#008080</th>
+                <th id="c43" onmouseover="Changecolor(this)" onmouseout="Normal(this)">#0000FF</th>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function Changecolor(x) {
+          //console.log(x.innerHTML)
+          var i=x.innerHTML;
+          x.style.color=i;
+        }
+        
+        function Normal(x) {
+           x.style.color='black';
+        }
+        </script>
+</body>
+</html>
