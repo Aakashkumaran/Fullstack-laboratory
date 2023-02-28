@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <script>
+            function confirming()
+            {
+                window.confirm("Are you sure you want to submit?")
+            }
+            function welcome()
+            {
+                window.alert("welcome")
+            }
+        </script>
+    </head>
+    <body bgcolor="Gray">
+        <div class="heading">
+            <h1 style="background: rgb(45, 211, 230);"><center>Registration Form</center></h1>
+        </div>
+        <form onsubmit="welcome()">
+        <table border="0">
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" placeholder="Aakash"></td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>            
+            <tr>
+                <td><label>Department</label></td>
+                <td>
+                    <select>
+                        <option>B.Tech AIDS</option>
+                        <option>B.Tech IT</option>
+                        <option>B.Tech BioTech</option>
+                        <option>BE CSE</option>
+                        <option>BE ECE</option>
+                        <option>BE EEE</option>
+                        <option>BE Mech</option>
+                        <option>BE BioMed</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>            
+            <tr>
+                <td><label>College</label></td>
+                <td><input type="text" placeholder="MSEC"></td>
+            </tr>            
+            <tr>
+                <td><br></td>
+            </tr>            
+            <tr>
+                <td><label>Year</label></td>
+                <td><input type="radio" Name="year"><label>1<sup>st</sup></label>
+                <input type="radio" Name="year"><label>2<sup>nd</sup></label>
+                <input type="radio" Name="year"><label>3<sup>rd</sup></label>
+                <input type="radio" Name="year"><label>4<sup>th</sup></label></td>
+            </tr>            
+            <tr>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label></td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td><textarea rows="5" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>                       
+            <tr>
+                <td><label>Mail Id</label></td>
+                <td><input type="email" placeholder="ak@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>            
+            <tr>
+                <td><label>Date of Event</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>            
+            <!--<tr>
+                <td><label for="points">Number of Events</label></td>
+                <td><input type="range" id="points" min="0" max="100"></td>
+            </tr>-->
+            <tr>
+                <td><br></td>
+            </tr>            
+            <tr>
+                <td><label>Event List</label></td>
+                <td>
+                    <input type="checkbox">
+                    <label>Hackathon</label>
+                    <input type="checkbox">
+                    <label>Mind maze</label>
+                    <br>
+                    <input type="checkbox">
+                    <label>Debugging</label>
+                    <input type="checkbox">
+                    <label>Dance floor</label>
+                    <input type="checkbox">
+                    <label>Quizzards</label>
+                </td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><input type="submit" onclick="confirming()"></center></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Padding</title>
+        <style type="text/css">
+            img{
+                padding:100px;
+                width: 900px;
+                height: 500px;
+                border: solid;
+                background-color: rgb(44, 158, 49);
+            }
+            /* .outer{
+                background-color: rgb(233, 118, 17);
+                padding: 100px;
+                border : groove;
+            } */
+            .inner{
+                border: 5px;
+                border-color:rgb(0, 0, 0);
+                background-color: rgb(218, 80, 30);
+                padding: 100px;
+                border : dashed;
+            }
+        </style>
+    </head>
+    <body align = "center">
+        <div class="outer">
+            <div class="inner">
+                <img src="C:\Users\Mathangi S\Desktop\fs lab\ex2\aakash.png" alt="aakash">
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+/* div{
+    width:100%;
+} */
+img{
+    display: inline-block;
+    height: 200px;
+}
+.rest{
+    margin-right: -102px;
+}
+/* .rest:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+h1{
+  color: black;
+  background-color: rgba(242, 234, 243, 0.509);
+
+}
+</style>
+</head>
+<body align = "center" bgcolor="rgba(201, 62, 216, 0.509)">
+  <h1>Full Flush</h1>
+  <img class="rest" src="king.jpg">
+  <img class="rest" src="queen.jpg">
+  <img class="rest" src="jack.jpg">
+  <img class="rest" src="10.jpg">
+  <img class="rest" src="9.jpg">
+  <img class="rest" src="8.jpg">
+  <img class="rest" src="7.jpg">
+  <img class="rest" src="6.jpg">
+  <img class="rest" src="5.jpg">
+  <img class="rest" src="4.jpg">
+  <img class="rest" src="3.jpg">
+  <img class="rest" src="2.jpg">
+  <img class="rest" src="Ace.jpg">
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staircase</title>
+        <style>
+            .full
+            {
+                border: groove;
+                margin-left:200px;
+                padding: 100px;
+                background-color: rgb(96, 96, 108);
+            }
+
+
+            .d1{
+                width: 100px;
+                height: 50px;
+                border-style: groove;
+                border-color: black;
+                background-color:rgb(248, 54, 19);
+            }
+
+            .d2{
+                width: 200px;
+                height: 50px;
+                border-style: groove;
+                border-color: black;
+                background-color:Orange;
+            }
+
+            .d3{
+                width: 300px;
+                height: 50px;
+                border-style: groove;
+                border-color: black;
+                background-color:rgb(244, 255, 30);
+            }
+
+            .d4{
+                width: 400px;
+                height: 50px;
+                border-style: groove;
+                border-color: black;
+                background-color:MediumSeaGreen;
+            }
+
+            .d5{
+                width: 500px;
+                height: 50px;
+                border-style: groove;
+                border-color: black;
+                background-color:rgb(14, 70, 255);
+            }
+
+            .d6{
+                width: 600px;
+                height: 50px;
+                border-style: groove;
+                border-color: black;
+                background-color:rgb(153, 90, 205);
+            }
+            body{
+                margin-left: 50px;
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body align="center">
+        
+    </div>
+        <div class="full">
+            <div class="d1">
+            </div>
+            <div class="d2">
+            </div>
+            <div class="d3">
+            </div>
+            <div class="d4">
+            </div>
+            <div class="d5">
+            </div>
+            <div class="d6">
+            </div>
+        </div>
+    </body>
+</html>
+
+
+var opr = "";
+
+var screen = document.getElementById("res");
+screen.innerHTML = "";
+
+buttonClicked = function() {
+    var e = window.event;
+    var btn = e.target || e.srcElement;
+    
+    if (btn.id != "btnClr" && btn.id != "btnEql") {
+        screen.innerHTML += btn.innerHTML;
+        
+        if (btn.id != "btn0" && btn.id != "btn1") {
+            opr = btn.innerHTML;
+        }
+    } else if (btn.id == "btnEql") {
+        var str = screen.innerHTML.split(opr);
+        var op1 = str[0];
+        var op2 = str[1];
+        
+        /* The double bitwise NOT ('~~') is a shortcut for Math.floor() */
+        screen.innerHTML = (~~eval(parseInt(op1, 2) + opr + parseInt(op2, 2))).toString(2);
+        
+        opr = "";
+    } else if (btn.id == "btnClr") {
+        screen.innerHTML = "";
+        opr = "";
+    }
+}
