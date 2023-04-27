@@ -1,0 +1,71 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <h1><%= htmlWebpackPlugin.options.gren %></h1>
+  <table border="1">
+    <tr>
+      <td><%= htmlWebpackPlugin.options.tabfirst %></td>
+      <td><%= htmlWebpackPlugin.options.tabsecond %></td>
+      <td><%= htmlWebpackPlugin.options.tabthird %></td>
+    </tr>
+    <tr>
+      <td><%= htmlWebpackPlugin.options.tabsfirst %></td>
+      <td><%= htmlWebpackPlugin.options.tabssecond %></td>
+      <td><%= htmlWebpackPlugin.options.tabsthird %></td>
+    </tr>
+
+  </table>
+  <form action="/bat" method="get">
+    <input type="text" placeholder="Enter the text"/>
+    <input type="submit"/>
+  </form>
+</body>
+</html>
+index.js
+import panzoom from 'panzoom';
+import flicking from '@egjs/flicking';
+
+console.log(panzoom);
+console.log(flicking);
+
+webpack.config.js
+const HtmlWebpackPlugin=require("html-webpack-plugin");
+const path=require("path");
+module.exports={
+  plugins:[
+    new HtmlWebpackPlugin({
+      // hash:true,
+      tabfirst:"Java",
+      tabsecond:"C",
+      tabthird:"C++",
+      tabsfirst:"Kotlin",
+      tabssecond:"Javascript",
+      tabsthird:"React",
+      hash: true,
+      title: 'Webpack Example App',
+      header: 'Webpack Example Title',
+      metaDesc: 'Webpack Example Description',
+      template: './src/index.html',
+      filename: 'index.html',
+      inject: 'body',
+      gren:"Hello its working at last"
+  
+    })
+  ],
+  mode:"development",
+  output:{
+    clean:true
+  },
+  devServer: {
+    contentBase: './dist',
+    open: true
+  }
+}
+
